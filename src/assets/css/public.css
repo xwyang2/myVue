@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+/*清除默认样式*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,figure{margin:0;padding:0;}
+a,u,s,del{color:#666;text-decoration:none} 
+fieldset ,a img,.bor0{border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;}
+table{border-collapse:collapse;}
+mark{background:none;}
+/*文本省略号*/
+.over{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.valign{text-align:center;}
+.valign img{vertical-align:middle;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;height:100%;}
+/*清除浮动*/
+.clear{zoom:1;}/*解决ie高度塌陷*/
+.clear:before{content:"";display:table;}/*解决margin向上传递*/
+.clear:after{content:"";clear:both;display:block;}
+/*公共样式*/
+html{font-size:15.625vw;}
+
+.goodslist {
+    padding-bottom:0.84rem; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+  }
+  .goodslist li {
+    width: 49.5%;
+    margin-top: 0.1rem;
+    background: #fff;
+  }
+  .goodslist li a {
+    display: block;
+  }
+  .goodslist li img {
+    display: block;
+    height: 3.14rem;
+  }
+  .goodslist li p {
+    height: 0.26rem;
+    margin-top: 0.1rem;
+    font-size:0.2rem;
+    line-height: 0.26rem;
+     
+    padding: 0 0.12rem;
+  }
+  .goodslist li i {
+    display: block;
+    height: 0.3rem;
+    font: 0.26rem/0.36rem "";
+    font-size:0.26rem;
+    line-height: 0.36rem;
+    color: #f00;
+    padding: 0 0.12rem;
+  }
+  .goodslist li em {
+    display: block;
+    width: 0.9rem;
+    height: 0.3rem;
+    padding: 0 0.05rem;
+    font-size:0.18rem;
+    line-height: 0.3rem;
+    color: #e26f50;
+    background: #ffe5e1;
+    margin-left:0.12rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .title{
+    color: #000;
+    font-size:0.3rem;
+    line-height: 0.6rem;
+    font-weight:800; 
+    background: #fff;
+    text-align: center;
+    border-bottom: 0.01rem solid #ccc;
+    
+}
+.othercontent{
+    margin:0.1rem 0;
+    background: #fbfbfb; 
+    padding: 0 0.15rem;
+}
+.othercontent span:nth-child(1){
+    display: block;
+    font-size:0.3rem;
+    line-height: 0.8rem;
+    font-weight:800; 
+    text-align: left;
+}
+.othercontent p{
+    overflow: hidden;
+}
+.othercontent p a{
+    float: left;
+    width:1.45rem;
+}
+.othercontent p span.content{
+    float: left;
+    width:4.5rem;
+    height: 1.2rem;
+    overflow: hidden;
+    text-align: left;
+    background: #fff;
+    font-size:0.26rem;
+    line-height: 0.4rem;
+}
+.othercontent a img{
+    display: block;
+    width:0.75rem;
+    height:0.75rem;
+    margin: 0 auto;
+}
+.othercontent a em{
+    text-align: center;
+    display: block;
+    font-size:0.26rem;
+    line-height: 0.4rem;
+    margin:0.125rem 0;
+}

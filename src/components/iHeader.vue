@@ -1,0 +1,61 @@
+<template>
+  <div class="header clear">
+    <div class="search">
+      <input type="button">
+      <input type="text" placeholder="请输入商品名称">
+    </div>
+    <a href="javascript:;"></a>
+  </div>
+</template>
+<script>
+export default {};
+</script>
+<style>
+.header {
+  width: 100%;
+  height: 0.78rem;
+  position: fixed;
+  left:0;
+  top:0;
+  background: #fff;
+  z-index: 2;
+}
+.header .search {
+  float: left;
+  width: 5.5rem;
+  height: 0.58rem;
+  margin-left: 0.24rem;
+  margin-top: 0.1rem;
+  background: #f5f5f5;
+}
+.header .search input:nth-child(1) {
+  float: left;
+  width: 0.58rem;
+  height: 0.58rem;
+  background: #f5f5f5 url(../assets/imgs/header_bg01.jpg) no-repeat center;
+  background-size: 0.3rem 0.3rem;
+  border: none;
+}
+.header .search input:nth-child(2) {
+  float: left;
+  width: 4.92rem;
+  height: 0.58rem;
+  border: none;
+  background: #f5f5f5;
+  font-size: 0.26rem;
+  line-height: 0.58rem;
+  box-sizing: border-box;
+}
+.header a {
+  float: right;
+  display: block;
+  width: 0.26rem;
+  height: 0.26rem;
+  margin-right: 0.2rem;
+  margin-top: 0.26rem;
+  background: url(../assets/imgs/header_bg02.jpg) no-repeat center;
+  background-size: 0.26rem 0.26rem;
+}
+</style>
+
+

@@ -1,0 +1,99 @@
+<template>
+  <div class="footer">
+    <ul>
+      <router-link to="/home" tag="li" active-class="actives">
+        <a href="javascript:;">
+          <span><img src="../assets/imgs/footer_home01.jpg" ></span>
+          <em>首页</em>
+        </a>
+      </router-link>
+      <router-link to="/chart" tag="li" active-class="actives">
+        <a href="javascript:;">
+          <span><img src="../assets/imgs/footer_chart01.jpg" ></span>
+          <em>聊天</em>
+        </a>
+      </router-link>
+      <router-link to="/shoppingcart" tag="li" active-class="actives">
+        <a href="javascript:;">
+          <span><img src="../assets/imgs/footer_cart01.jpg" ></span>
+          <em>购物车</em>
+        </a>
+      </router-link>
+      <router-link to="/account" tag="li" active-class="actives">
+        <a href="javascript:;">
+          <span><img src="../assets/imgs/footer_user01.jpg" ></span>
+          <em>我的</em>
+        </a>
+      </router-link>
+    </ul>
+  </div>
+</template>
+<script>
+export default {
+  
+};
+</script>
+<style>
+.footer {
+  width: 100%;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  height: 0.84rem;
+}
+.footer ul {
+  display: flex;
+  padding: 0.1rem 0.4rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 0.64rem;
+}
+.footer ul li {
+  width: 0.8rem;
+  text-align: center;
+  height: 0.64rem;
+}
+.footer ul li a {
+  display: block;
+}
+.footer ul li a span{
+  display: block;
+  width: 0.5rem;
+  height: 0.4rem;
+  margin: 0 auto;
+}
+.footer ul li a span img{
+  display: none;
+  width: 0.5rem;
+  height: 0.4rem;
+}
+.footer ul li:nth-child(1) span{
+  background: url(../assets/imgs/footer_home02.jpg) no-repeat;
+  background-size:0.5rem 0.4rem;
+}
+.footer ul li:nth-child(2) span{
+  background: url(../assets/imgs/footer_chart02.jpg) no-repeat;
+  background-size:0.5rem 0.4rem;
+}
+.footer ul li:nth-child(3) span{
+  background: url(../assets/imgs/footer_cart02.jpg) no-repeat;
+  background-size:0.5rem 0.4rem;
+}
+.footer ul li:nth-child(4) span{
+  background: url(../assets/imgs/footer_user02.jpg) no-repeat;
+  background-size:0.5rem 0.4rem;
+}
+.footer ul li.actives span img{
+  display: block;
+}
+.footer ul li a em {
+  display: block;
+  font-size: 0.18rem;
+  line-height: 0.24rem;
+  height: 0.24rem;
+}
+</style>
+
+
